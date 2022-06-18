@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D90AC2982859A9E200F46129 /* cahootApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2972859A9E200F46129 /* cahootApp.swift */; };
+		D90AC29A2859A9E200F46129 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2992859A9E200F46129 /* ContentView.swift */; };
+		D90AC29C2859A9E400F46129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90AC29B2859A9E400F46129 /* Assets.xcassets */; };
+		D90AC29F2859A9E400F46129 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90AC29E2859A9E400F46129 /* Preview Assets.xcassets */; };
+		D90AC2A92859A9E400F46129 /* cahootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2A82859A9E400F46129 /* cahootTests.swift */; };
+		D90AC2B32859A9E400F46129 /* cahootUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2B22859A9E400F46129 /* cahootUITests.swift */; };
+		D90AC2B52859A9E400F46129 /* cahootUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2B42859A9E400F46129 /* cahootUITestsLaunchTests.swift */; };
+		D90AC2FA2859BFB800F46129 /* Sheetview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2F92859BFB800F46129 /* Sheetview.swift */; };
+		D90AC2FC2859CAE400F46129 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2FB2859CAE400F46129 /* SwiftUIView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D90AC2A52859A9E400F46129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90AC28C2859A9E200F46129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D90AC2932859A9E200F46129;
+			remoteInfo = cahoot;
+		};
+		D90AC2AF2859A9E400F46129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90AC28C2859A9E200F46129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D90AC2932859A9E200F46129;
+			remoteInfo = cahoot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D90AC2942859A9E200F46129 /* cahoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cahoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90AC2972859A9E200F46129 /* cahootApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cahootApp.swift; sourceTree = "<group>"; };
+		D90AC2992859A9E200F46129 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D90AC29B2859A9E400F46129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D90AC29E2859A9E400F46129 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D90AC2A42859A9E400F46129 /* cahootTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cahootTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90AC2A82859A9E400F46129 /* cahootTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cahootTests.swift; sourceTree = "<group>"; };
+		D90AC2AE2859A9E400F46129 /* cahootUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cahootUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90AC2B22859A9E400F46129 /* cahootUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cahootUITests.swift; sourceTree = "<group>"; };
+		D90AC2B42859A9E400F46129 /* cahootUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cahootUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D90AC2F92859BFB800F46129 /* Sheetview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheetview.swift; sourceTree = "<group>"; };
+		D90AC2FB2859CAE400F46129 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D90AC2912859A9E200F46129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90AC2A12859A9E400F46129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90AC2AB2859A9E400F46129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D90AC28B2859A9E200F46129 = {
+			isa = PBXGroup;
+			children = (
+				D90AC2962859A9E200F46129 /* cahoot */,
+				D90AC2A72859A9E400F46129 /* cahootTests */,
+				D90AC2B12859A9E400F46129 /* cahootUITests */,
+				D90AC2952859A9E200F46129 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D90AC2952859A9E200F46129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D90AC2942859A9E200F46129 /* cahoot.app */,
+				D90AC2A42859A9E400F46129 /* cahootTests.xctest */,
+				D90AC2AE2859A9E400F46129 /* cahootUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D90AC2962859A9E200F46129 /* cahoot */ = {
+			isa = PBXGroup;
+			children = (
+				D90AC2972859A9E200F46129 /* cahootApp.swift */,
+				D90AC2992859A9E200F46129 /* ContentView.swift */,
+				D90AC29B2859A9E400F46129 /* Assets.xcassets */,
+				D90AC29D2859A9E400F46129 /* Preview Content */,
+				D90AC2F92859BFB800F46129 /* Sheetview.swift */,
+				D90AC2FB2859CAE400F46129 /* SwiftUIView.swift */,
+			);
+			path = cahoot;
+			sourceTree = "<group>";
+		};
+		D90AC29D2859A9E400F46129 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D90AC29E2859A9E400F46129 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D90AC2A72859A9E400F46129 /* cahootTests */ = {
+			isa = PBXGroup;
+			children = (
+				D90AC2A82859A9E400F46129 /* cahootTests.swift */,
+			);
+			path = cahootTests;
+			sourceTree = "<group>";
+		};
+		D90AC2B12859A9E400F46129 /* cahootUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D90AC2B22859A9E400F46129 /* cahootUITests.swift */,
+				D90AC2B42859A9E400F46129 /* cahootUITestsLaunchTests.swift */,
+			);
+			path = cahootUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D90AC2932859A9E200F46129 /* cahoot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90AC2B82859A9E400F46129 /* Build configuration list for PBXNativeTarget "cahoot" */;
+			buildPhases = (
+				D90AC2902859A9E200F46129 /* Sources */,
+				D90AC2912859A9E200F46129 /* Frameworks */,
+				D90AC2922859A9E200F46129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cahoot;
+			productName = cahoot;
+			productReference = D90AC2942859A9E200F46129 /* cahoot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D90AC2A32859A9E400F46129 /* cahootTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90AC2BB2859A9E400F46129 /* Build configuration list for PBXNativeTarget "cahootTests" */;
+			buildPhases = (
+				D90AC2A02859A9E400F46129 /* Sources */,
+				D90AC2A12859A9E400F46129 /* Frameworks */,
+				D90AC2A22859A9E400F46129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D90AC2A62859A9E400F46129 /* PBXTargetDependency */,
+			);
+			name = cahootTests;
+			productName = cahootTests;
+			productReference = D90AC2A42859A9E400F46129 /* cahootTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D90AC2AD2859A9E400F46129 /* cahootUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90AC2BE2859A9E400F46129 /* Build configuration list for PBXNativeTarget "cahootUITests" */;
+			buildPhases = (
+				D90AC2AA2859A9E400F46129 /* Sources */,
+				D90AC2AB2859A9E400F46129 /* Frameworks */,
+				D90AC2AC2859A9E400F46129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D90AC2B02859A9E400F46129 /* PBXTargetDependency */,
+			);
+			name = cahootUITests;
+			productName = cahootUITests;
+			productReference = D90AC2AE2859A9E400F46129 /* cahootUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D90AC28C2859A9E200F46129 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					D90AC2932859A9E200F46129 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					D90AC2A32859A9E400F46129 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = D90AC2932859A9E200F46129;
+					};
+					D90AC2AD2859A9E400F46129 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = D90AC2932859A9E200F46129;
+					};
+				};
+			};
+			buildConfigurationList = D90AC28F2859A9E200F46129 /* Build configuration list for PBXProject "cahoot" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D90AC28B2859A9E200F46129;
+			productRefGroup = D90AC2952859A9E200F46129 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D90AC2932859A9E200F46129 /* cahoot */,
+				D90AC2A32859A9E400F46129 /* cahootTests */,
+				D90AC2AD2859A9E400F46129 /* cahootUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D90AC2922859A9E200F46129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90AC29F2859A9E400F46129 /* Preview Assets.xcassets in Resources */,
+				D90AC29C2859A9E400F46129 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90AC2A22859A9E400F46129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90AC2AC2859A9E400F46129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D90AC2902859A9E200F46129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90AC29A2859A9E200F46129 /* ContentView.swift in Sources */,
+				D90AC2FA2859BFB800F46129 /* Sheetview.swift in Sources */,
+				D90AC2FC2859CAE400F46129 /* SwiftUIView.swift in Sources */,
+				D90AC2982859A9E200F46129 /* cahootApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90AC2A02859A9E400F46129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90AC2A92859A9E400F46129 /* cahootTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90AC2AA2859A9E400F46129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90AC2B52859A9E400F46129 /* cahootUITestsLaunchTests.swift in Sources */,
+				D90AC2B32859A9E400F46129 /* cahootUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D90AC2A62859A9E400F46129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D90AC2932859A9E200F46129 /* cahoot */;
+			targetProxy = D90AC2A52859A9E400F46129 /* PBXContainerItemProxy */;
+		};
+		D90AC2B02859A9E400F46129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D90AC2932859A9E200F46129 /* cahoot */;
+			targetProxy = D90AC2AF2859A9E400F46129 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D90AC2B62859A9E400F46129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D90AC2B72859A9E400F46129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D90AC2B92859A9E400F46129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"cahoot/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonho.cahoot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D90AC2BA2859A9E400F46129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"cahoot/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonho.cahoot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D90AC2BC2859A9E400F46129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonho.cahootTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cahoot.app/cahoot";
+			};
+			name = Debug;
+		};
+		D90AC2BD2859A9E400F46129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonho.cahootTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cahoot.app/cahoot";
+			};
+			name = Release;
+		};
+		D90AC2BF2859A9E400F46129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonho.cahootUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cahoot;
+			};
+			name = Debug;
+		};
+		D90AC2C02859A9E400F46129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonho.cahootUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cahoot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D90AC28F2859A9E200F46129 /* Build configuration list for PBXProject "cahoot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90AC2B62859A9E400F46129 /* Debug */,
+				D90AC2B72859A9E400F46129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90AC2B82859A9E400F46129 /* Build configuration list for PBXNativeTarget "cahoot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90AC2B92859A9E400F46129 /* Debug */,
+				D90AC2BA2859A9E400F46129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90AC2BB2859A9E400F46129 /* Build configuration list for PBXNativeTarget "cahootTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90AC2BC2859A9E400F46129 /* Debug */,
+				D90AC2BD2859A9E400F46129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90AC2BE2859A9E400F46129 /* Build configuration list for PBXNativeTarget "cahootUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90AC2BF2859A9E400F46129 /* Debug */,
+				D90AC2C02859A9E400F46129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D90AC28C2859A9E200F46129 /* Project object */;
+}

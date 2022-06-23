@@ -51,6 +51,7 @@ struct SummaryView: View {
                         .foregroundColor(.white)
                         .padding()
 
+                
                 }
             }
         }

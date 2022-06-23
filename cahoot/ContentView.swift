@@ -30,7 +30,7 @@ struct ContentView: View {
                                 wrongans = true
                             }
                         } label: {
-                            Text("\(Quiz[questionIndex].options[0])")
+                            Text("▲\(Quiz[questionIndex].options[0])")
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()
@@ -48,7 +48,7 @@ struct ContentView: View {
                                 wrongans = true
                             }
                         } label: {
-                            Text("\(Quiz[questionIndex].options[1])")
+                            Text("■\(Quiz[questionIndex].options[1])")
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()
@@ -68,7 +68,7 @@ struct ContentView: View {
                                 wrongans = true
                             }
                         } label: {
-                            Text("\(Quiz[questionIndex].options[2])")
+                            Text("◆\(Quiz[questionIndex].options[2])")
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()
@@ -86,7 +86,7 @@ struct ContentView: View {
                                 wrongans = true
                             }
                         } label: {
-                            Text("\(Quiz[questionIndex].options[3])")
+                            Text("●\(Quiz[questionIndex].options[3])")
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()

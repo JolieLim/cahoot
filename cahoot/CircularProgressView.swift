@@ -10,9 +10,10 @@ import SwiftUI
 struct CircularProgressView: View {
     
     var progress: CGFloat
-    
+    var correc: Int
     var body: some View {
         ZStack {
+            Color.black
             Circle()
                 .stroke(lineWidth: 20)
                 .opacity(0.3)
@@ -24,30 +25,32 @@ struct CircularProgressView: View {
                 .foregroundColor(Color("CircularProgressViewColor"))
                 .rotationEffect(Angle(degrees: 270))
                 .padding()
+            Text("You got \(correc)/\(Quiz.count) correct!")
+                .foregroundColor(.white)
         }
             if progress == 0{
                 Text("Aww man go google a link to watch paw patrol free online (pirating ahem)")
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .padding()
             }
             else if progress == 1/4{
                 Text("Aww man go google a link to watch paw patrol free online (pirating ahem)")
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .padding()
             }
             else if progress == 0.5{
                 Text("You passed, congratulations - but you still kinda suck :/")
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .padding()
             }
             else if progress == 3/4{
                 Text("THE FATAL FLAW IN YOUR SEEMINGLY COMPLETE KNOWLEDGE HAS SURFACED GO TO THE WIKI AND PATCH IT UP - YOU WERE SO CLOSE TO PERFECTION SIGH")
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .padding()
             }
             else{
                 Text("Your childhood has been certified to be amazing, perfect and marvellous")
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .padding()
 
             }
@@ -56,6 +59,6 @@ struct CircularProgressView: View {
 
 struct CircularProgressView_Previews: PreviewProvider {
     static var previews: some View {
-        CircularProgressView(progress: 1/4)
+        CircularProgressView(progress: 1/4,correc: 1)
     }
 }

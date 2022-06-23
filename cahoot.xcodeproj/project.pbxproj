@@ -16,6 +16,7 @@
 		D90AC2B52859A9E400F46129 /* cahootUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2B42859A9E400F46129 /* cahootUITestsLaunchTests.swift */; };
 		D90AC2FA2859BFB800F46129 /* Sheetview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2F92859BFB800F46129 /* Sheetview.swift */; };
 		D90AC2FC2859CAE400F46129 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2FB2859CAE400F46129 /* SwiftUIView.swift */; };
+		D988F98028643ADF00A4A9F5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D988F97F28643ADF00A4A9F5 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		D90AC2B42859A9E400F46129 /* cahootUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cahootUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D90AC2F92859BFB800F46129 /* Sheetview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheetview.swift; sourceTree = "<group>"; };
 		D90AC2FB2859CAE400F46129 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		D988F97F28643ADF00A4A9F5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				D90AC2972859A9E200F46129 /* cahootApp.swift */,
 				D90AC2992859A9E200F46129 /* ContentView.swift */,
+				D988F97F28643ADF00A4A9F5 /* Question.swift */,
 				D90AC29B2859A9E400F46129 /* Assets.xcassets */,
 				D90AC29D2859A9E400F46129 /* Preview Content */,
 				D90AC2F92859BFB800F46129 /* Sheetview.swift */,
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D988F98028643ADF00A4A9F5 /* Question.swift in Sources */,
 				D90AC29A2859A9E200F46129 /* ContentView.swift in Sources */,
 				D90AC2FA2859BFB800F46129 /* Sheetview.swift in Sources */,
 				D90AC2FC2859CAE400F46129 /* SwiftUIView.swift in Sources */,

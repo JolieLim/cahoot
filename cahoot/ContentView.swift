@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack{
-            Color.purple
+            Color("BackgroundColor")
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 
@@ -26,6 +26,8 @@ struct ContentView: View {
                 Image("\(Quiz[questionIndex].image)")
                     .resizable()
                     .scaledToFit()
+                    .cornerRadius(25)
+                    .padding(10)
                 HStack{
                     VStack{
                         Button {
@@ -113,7 +115,9 @@ struct ContentView: View {
         .alert("You're right! The answer is \(Quiz[questionIndex].options[Quiz[questionIndex].answer]).", isPresented: $correctans){
                     Button (role: .cancel){
                         if(questionIndex != 3){
-                            questionIndex+=1
+                            withAnimation(Animation.easeInOut){
+                                questionIndex+=1
+                            }
                         }
                         else{
                             isSheet = true
@@ -125,7 +129,9 @@ struct ContentView: View {
         .alert("You're wrong! The answer is \(Quiz[questionIndex].options[Quiz[questionIndex].answer]).", isPresented: $wrongans){
                     Button (role: .cancel){
                         if(questionIndex != 3){
-                            questionIndex+=1
+                            withAnimation(Animation.easeInOut){
+                                questionIndex+=1
+                            }
                         }
                         else{
                             isSheet = true

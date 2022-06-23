@@ -7,29 +7,11 @@ struct ContentView: View {
     @State var wrongans = false
     @State var qnCorrec = 0
     @State var isSheet = false
-    @State var timeRemaining = 60
-       let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
     var body: some View {
         ZStack{
             Color.purple
                 .edgesIgnoringSafeArea(.all)
             VStack{
-                
-             
-                
-                Text("\(timeRemaining)")
-                            .onReceive(timer) { _ in
-                                if timeRemaining > 0 {
-                                    timeRemaining -= 1
-                                }
-                                
-                                if timeRemaining == 0 {
-                                    isSheet = true
-                                }
-                                
-                            }
-                
                 Text("\(Quiz[questionIndex].qn)")
                     .font(.largeTitle)
                     .padding()
@@ -40,7 +22,7 @@ struct ContentView: View {
                 HStack{
                     VStack{
                         Button {
-                            if Quiz[questionIndex].options[0] == Quiz[questionIndex].answer{
+                            if Quiz[questionIndex].answer == 0{
                                 correctans = true
                                 qnCorrec+=1
                             }
@@ -58,7 +40,7 @@ struct ContentView: View {
                                 
                         }
                         Button {
-                            if Quiz[questionIndex].options[1] == Quiz[questionIndex].answer{
+                            if Quiz[questionIndex].answer == 1{
                                 correctans = true
                                 qnCorrec+=1
                             }
@@ -78,7 +60,7 @@ struct ContentView: View {
                     }
                     VStack{
                         Button {
-                            if Quiz[questionIndex].options[2] == Quiz[questionIndex].answer{
+                            if Quiz[questionIndex].answer == 2{
                                 correctans = true
                                 qnCorrec+=1
                             }
@@ -96,7 +78,7 @@ struct ContentView: View {
                         }
 
                         Button {
-                            if Quiz[questionIndex].options[3] == Quiz[questionIndex].answer{
+                            if Quiz[questionIndex].answer == 3{
                                 correctans = true
                                 qnCorrec+=1
                             }
@@ -117,7 +99,7 @@ struct ContentView: View {
                 }
             }
         }
-        .alert("You're right! The answer is \(Quiz[questionIndex].answer).", isPresented: $correctans){
+        .alert("You're right! The answer is \(Quiz[questionIndex].options[Quiz[questionIndex].answer]).", isPresented: $correctans){
                     Button (role: .cancel){
                         if(questionIndex != 3){
                             questionIndex+=1
@@ -129,7 +111,7 @@ struct ContentView: View {
                         Text("OK")
                     }
         }
-        .alert("You're wrong! The answer is \(Quiz[questionIndex].answer).", isPresented: $wrongans){
+        .alert("You're wrong! The answer is \(Quiz[questionIndex].options[Quiz[questionIndex].answer]).", isPresented: $wrongans){
                     Button (role: .cancel){
                         if(questionIndex != 3){
                             questionIndex+=1
@@ -142,7 +124,7 @@ struct ContentView: View {
                     }
         }
         .sheet(isPresented: $isSheet) {
-            SummaryView(qnCorrect: qnCorrec,curtime: timeRemaining)
+            SummaryView(qnCorrect: qnCorrec)
         }
     }
 }

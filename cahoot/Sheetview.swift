@@ -4,7 +4,6 @@ struct SummaryView: View {
     @State var image = ""
     @State var text = ""
     var qnCorrect: Int
-    var curtime: Int
     var body: some View {
         ZStack{
             Color.black
@@ -59,6 +58,6 @@ struct SummaryView: View {
 
 struct SummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        SummaryView(qnCorrect: 0,curtime: 20)
+        SummaryView(qnCorrect: 0)
     }
 }

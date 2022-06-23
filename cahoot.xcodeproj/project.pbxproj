@@ -14,9 +14,9 @@
 		D90AC2A92859A9E400F46129 /* cahootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2A82859A9E400F46129 /* cahootTests.swift */; };
 		D90AC2B32859A9E400F46129 /* cahootUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2B22859A9E400F46129 /* cahootUITests.swift */; };
 		D90AC2B52859A9E400F46129 /* cahootUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2B42859A9E400F46129 /* cahootUITestsLaunchTests.swift */; };
-		D90AC2FA2859BFB800F46129 /* Sheetview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2F92859BFB800F46129 /* Sheetview.swift */; };
 		D90AC2FC2859CAE400F46129 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AC2FB2859CAE400F46129 /* SwiftUIView.swift */; };
 		D988F98028643ADF00A4A9F5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D988F97F28643ADF00A4A9F5 /* Question.swift */; };
+		D99D72D22864455900F23279 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D72D12864455900F23279 /* CircularProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,9 @@
 		D90AC2AE2859A9E400F46129 /* cahootUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cahootUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90AC2B22859A9E400F46129 /* cahootUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cahootUITests.swift; sourceTree = "<group>"; };
 		D90AC2B42859A9E400F46129 /* cahootUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cahootUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D90AC2F92859BFB800F46129 /* Sheetview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheetview.swift; sourceTree = "<group>"; };
 		D90AC2FB2859CAE400F46129 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		D988F97F28643ADF00A4A9F5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D99D72D12864455900F23279 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +105,8 @@
 				D988F97F28643ADF00A4A9F5 /* Question.swift */,
 				D90AC29B2859A9E400F46129 /* Assets.xcassets */,
 				D90AC29D2859A9E400F46129 /* Preview Content */,
-				D90AC2F92859BFB800F46129 /* Sheetview.swift */,
 				D90AC2FB2859CAE400F46129 /* SwiftUIView.swift */,
+				D99D72D12864455900F23279 /* CircularProgressView.swift */,
 			);
 			path = cahoot;
 			sourceTree = "<group>";
@@ -268,8 +268,8 @@
 			files = (
 				D988F98028643ADF00A4A9F5 /* Question.swift in Sources */,
 				D90AC29A2859A9E200F46129 /* ContentView.swift in Sources */,
-				D90AC2FA2859BFB800F46129 /* Sheetview.swift in Sources */,
 				D90AC2FC2859CAE400F46129 /* SwiftUIView.swift in Sources */,
+				D99D72D22864455900F23279 /* CircularProgressView.swift in Sources */,
 				D90AC2982859A9E200F46129 /* cahootApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

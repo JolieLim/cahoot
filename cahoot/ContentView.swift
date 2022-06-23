@@ -13,7 +13,7 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 
-                ProgressView(value: Double(isSheet == true ? Quiz.count : questionIndex), total: Double(Quiz.count))
+                ProgressView(value: Double(questionIndex+1), total: Double(Quiz.count))
                     .padding()
                 
                 Text("\(Quiz[questionIndex].qn)")

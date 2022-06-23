@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CircularProgressView: View {
-    
+@Environment(\.openURL) var openURL
+
     var progress: CGFloat
     var correc: Int
     var body: some View {
@@ -32,11 +33,41 @@ struct CircularProgressView: View {
                 Text("Aww man go google a link to watch paw patrol free online (pirating ahem)")
                     .foregroundColor(.white)
                     .padding()
+                Button(action: {
+                    openURL(URL(string: "https://www.youtube.com/watch?v=Q3CeOIaxcH8")!)
+                }, label: {
+                    HStack {
+                        Image(systemName: "video.fill")
+                            .foregroundColor(.white)
+                            .opacity(0.8)
+                        Text("watch here!")
+                            .font(.system(size: 20, weight: .regular, design: .rounded))
+                            .foregroundColor(.white)
+                    }
+                    .padding()
+                    .background(Color.teal.shadow(color: .teal, radius: 3, x: 0.5, y: 1))
+                })
+
             }
             else if progress == 1/4{
                 Text("Aww man go google a link to watch paw patrol free online (pirating ahem)")
                     .foregroundColor(.white)
                     .padding()
+                Button(action: {
+                    openURL(URL(string: "https://www.youtube.com/watch?v=Q3CeOIaxcH8")!)
+                }, label: {
+                    HStack {
+                        Image(systemName: "video.fill")
+                            .foregroundColor(.white)
+                            .opacity(0.8)
+                        Text("watch here!")
+                            .font(.system(size: 20, weight: .regular, design: .rounded))
+                            .foregroundColor(.white)
+                    }
+                    .padding()
+                    .background(Color.teal.shadow(color: .teal, radius: 3, x: 0.5, y: 1))
+                })
+
             }
             else if progress == 0.5{
                 Text("You passed, congratulations - but you still kinda suck :/")

@@ -40,7 +40,7 @@ struct ContentView: View {
                 HStack{
                     VStack{
                         Button {
-                            if Quiz[questionIndex].option1 == Quiz[questionIndex].answer{
+                            if Quiz[questionIndex].options[0] == Quiz[questionIndex].answer{
                                 correctans = true
                                 qnCorrec+=1
                             }
@@ -48,7 +48,7 @@ struct ContentView: View {
                                 wrongans = true
                             }
                         } label: {
-                            Text("\(Quiz[questionIndex].option1)")
+                            Text("\(Quiz[questionIndex].options[0])")
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()
@@ -58,7 +58,7 @@ struct ContentView: View {
                                 
                         }
                         Button {
-                            if Quiz[questionIndex].option2 == Quiz[questionIndex].answer{
+                            if Quiz[questionIndex].options[1] == Quiz[questionIndex].answer{
                                 correctans = true
                                 qnCorrec+=1
                             }
@@ -66,7 +66,7 @@ struct ContentView: View {
                                 wrongans = true
                             }
                         } label: {
-                            Text("\(Quiz[questionIndex].option2)")
+                            Text("\(Quiz[questionIndex].options[1])")
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()
@@ -78,7 +78,7 @@ struct ContentView: View {
                     }
                     VStack{
                         Button {
-                            if Quiz[questionIndex].option3 == Quiz[questionIndex].answer{
+                            if Quiz[questionIndex].options[2] == Quiz[questionIndex].answer{
                                 correctans = true
                                 qnCorrec+=1
                             }
@@ -86,7 +86,7 @@ struct ContentView: View {
                                 wrongans = true
                             }
                         } label: {
-                            Text("\(Quiz[questionIndex].option3)")
+                            Text("\(Quiz[questionIndex].options[2])")
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()
@@ -96,7 +96,7 @@ struct ContentView: View {
                         }
 
                         Button {
-                            if Quiz[questionIndex].option4 == Quiz[questionIndex].answer{
+                            if Quiz[questionIndex].options[3] == Quiz[questionIndex].answer{
                                 correctans = true
                                 qnCorrec+=1
                             }
@@ -104,7 +104,7 @@ struct ContentView: View {
                                 wrongans = true
                             }
                         } label: {
-                            Text("\(Quiz[questionIndex].option4)")
+                            Text("\(Quiz[questionIndex].options[3])")
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()

@@ -12,6 +12,10 @@ struct ContentView: View {
             Color.purple
                 .edgesIgnoringSafeArea(.all)
             VStack{
+                
+                ProgressView(value: Double(isSheet == true ? Quiz.count : questionIndex), total: Double(Quiz.count))
+                    .padding()
+                
                 Text("\(Quiz[questionIndex].qn)")
                     .font(.largeTitle)
                     .padding()

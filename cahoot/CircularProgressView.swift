@@ -10,7 +10,7 @@ import SwiftUI
 struct CircularProgressView: View {
     
     var progress: CGFloat
-    
+    var correc: Int
     var body: some View {
         ZStack {
             Circle()
@@ -24,6 +24,7 @@ struct CircularProgressView: View {
                 .foregroundColor(.red)
                 .rotationEffect(Angle(degrees: 270))
                 .padding()
+            Text("You got \(correc)/\(Quiz.count) correct!")
         }
             if progress == 0{
                 Text("Aww man go google a link to watch paw patrol free online (pirating ahem)")
@@ -56,6 +57,6 @@ struct CircularProgressView: View {
 
 struct CircularProgressView_Previews: PreviewProvider {
     static var previews: some View {
-        CircularProgressView(progress: 1/4)
+        CircularProgressView(progress: 1/4,correc: 1)
     }
 }

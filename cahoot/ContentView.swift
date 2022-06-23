@@ -135,7 +135,7 @@ struct ContentView: View {
                     }
         }
         .sheet(isPresented: $isSheet) {
-            CircularProgressView(progress: CGFloat(Double(qnCorrec)/4))
+            CircularProgressView(progress: CGFloat(Double(qnCorrec)/4),correc: qnCorrec)
         }
     }
 }

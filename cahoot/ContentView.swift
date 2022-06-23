@@ -14,7 +14,9 @@ struct ContentView: View {
         Question(qn: "Where does the Paw Patrol live?", option1: "Rescue Bay", option2: "Foggy Bottoms", option3: "Adventure Bay", option4: "Meriden", image: "q1", answer: "Adventure Bay"),
         Question(qn: "What's the name of the Mayor?", option1: "Mayor Goodway", option2: "Mayor Alex", option3: "Mayor Jeff", option4: "Mayor Mickey", image: "q2", answer: "Mayor Goodway"),
         Question(qn: "What kind of pet does Mayor Goodway have?", option1: "Dog", option2: "Chicken" , option3: "Horse", option4: "Cat", image: "q3", answer: "Chicken"),
-        Question(qn: "Which pup hates the water?", option1: "Zoomer", option2: "Skye", option3: "Rubble", option4: "Rocky", image: "q4", answer: "Rocky")
+        Question(qn: "Which pup hates the water?", option1: "Zoomer", option2: "Skye", option3: "Rubble", option4: "Rocky", image: "q4", answer: "Rocky"),
+        Question(qn: "Which one is the fire pup?",
+                 option1: "Marshall", option2: "Zuma", option3: "Rocky", option4: "Chase", image: "q5", answer: "Marshall")
     ]
     
     @State var questionIndex = 0

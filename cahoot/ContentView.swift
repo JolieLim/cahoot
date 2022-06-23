@@ -7,6 +7,9 @@ struct ContentView: View {
     @State var wrongans = false
     @State var qnCorrec = 0
     @State var isSheet = false
+    let buttonWidth:CGFloat = 350
+    let buttonHeight:CGFloat = 75
+    
     var body: some View {
         ZStack{
             Color.purple
@@ -31,6 +34,7 @@ struct ContentView: View {
                             }
                         } label: {
                             Text("▲\(Quiz[questionIndex].options[0])")
+                                .frame(width: buttonWidth, height: buttonHeight)
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()
@@ -49,6 +53,7 @@ struct ContentView: View {
                             }
                         } label: {
                             Text("■\(Quiz[questionIndex].options[1])")
+                                .frame(width: buttonWidth, height: buttonHeight)
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()
@@ -69,6 +74,7 @@ struct ContentView: View {
                             }
                         } label: {
                             Text("◆\(Quiz[questionIndex].options[2])")
+                                .frame(width: buttonWidth, height: buttonHeight)
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()
@@ -87,6 +93,7 @@ struct ContentView: View {
                             }
                         } label: {
                             Text("●\(Quiz[questionIndex].options[3])")
+                                .frame(width: buttonWidth, height: buttonHeight)
                                 .font(.system(size: 17))
                                 .frame(width: 120)
                                 .padding()
